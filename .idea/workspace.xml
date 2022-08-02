@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="435787bf-74db-499d-ae06-296f2ba65ced" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ll/exam/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ll/exam/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,11 +49,46 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ll.exam.article.controller" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ll.exam" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AppTest.ioc__articleController__2">
+    <configuration name="AppTest.ioc__articleController__2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="community_3rd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.exam" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.exam.AppTest" />
+      <option name="METHOD_NAME" value="ioc__articleController__2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.ioc_articleController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="community_3rd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.exam" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.exam.AppTest" />
+      <option name="METHOD_NAME" value="ioc_articleController" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/" />
@@ -81,6 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AppTest.ioc__articleController__2" />
+      <item itemvalue="JUnit.AppTest.ioc_articleController" />
+      <item itemvalue="Smart Tomcat.tomcat" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppTest.ioc__articleController__2" />
+        <item itemvalue="JUnit.AppTest.ioc_articleController" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
