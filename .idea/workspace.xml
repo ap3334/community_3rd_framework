@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="435787bf-74db-499d-ae06-296f2ba65ced" name="Changes" comment="" />
+    <list default="true" id="435787bf-74db-499d-ae06-296f2ba65ced" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/Container.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +59,7 @@
       <recent name="com.ll.exam" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.ioc__articleService__싱글톤">
+  <component name="RunManager" selected="JUnit.AppTest.articleController를_생성할때_articleService도_같이_생성">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="community_3rd" />
       <extension name="coverage">
@@ -68,6 +71,22 @@
       <option name="PACKAGE_NAME" value="com.ll.exam" />
       <option name="MAIN_CLASS_NAME" value="com.ll.exam.AppTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.articleController를_생성할때_articleService도_같이_생성" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="community_3rd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.exam" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.exam.AppTest" />
+      <option name="METHOD_NAME" value="articleController를_생성할때_articleService도_같이_생성" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,22 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.ioc_dd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="community_3rd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ll.exam.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ll.exam" />
-      <option name="MAIN_CLASS_NAME" value="com.ll.exam.AppTest" />
-      <option name="METHOD_NAME" value="ioc_dd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/" />
@@ -160,19 +163,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AppTest" />
+      <item itemvalue="JUnit.AppTest.articleController를_생성할때_articleService도_같이_생성" />
       <item itemvalue="JUnit.AppTest.ioc__Controller들을_스캔하여_수집" />
       <item itemvalue="JUnit.AppTest.ioc__articleService" />
       <item itemvalue="JUnit.AppTest.ioc__articleService__싱글톤" />
-      <item itemvalue="JUnit.AppTest.ioc_dd" />
       <item itemvalue="Smart Tomcat.tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.articleController를_생성할때_articleService도_같이_생성" />
         <item itemvalue="JUnit.AppTest.ioc__articleService__싱글톤" />
         <item itemvalue="JUnit.AppTest.ioc__articleService" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.ioc__Controller들을_스캔하여_수집" />
-        <item itemvalue="JUnit.AppTest.ioc_dd" />
       </list>
     </recent_temporary>
   </component>

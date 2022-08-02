@@ -1,5 +1,6 @@
 package com.ll.exam;
 
+import com.ll.exam.annotation.Autowired;
 import com.ll.exam.annotation.Controller;
 import com.ll.exam.annotation.Service;
 import com.ll.exam.article.controller.ArticleController;
@@ -25,6 +26,8 @@ public class Container {
     private static void scanComponents() {
         scanServices();
         scanControllers();
+
+        resolveDependenciesAllComponents();
     }
 
     private static void scanServices() {
@@ -39,6 +42,34 @@ public class Container {
         for (Class<?> cls : ref.getTypesAnnotatedWith(Controller.class)) {
             objects.put(cls, Ut.cls.newObj(cls, null));
         }
+    }
+
+    private static void resolveDependenciesAllComponents() {
+        for (Class cls : objects.keySet()) {
+            Object o = objects.get(cls);
+
+            resolveDependencies(o);
+        }
+    }
+
+    private static void resolveDependencies(Object o) {
+        Arrays.asList(o.getClass().getDeclaredFields())
+                .stream()
+                .filter(f -> f.isAnnotationPresent(Autowired.class))
+                .map(field -> {
+                    field.setAccessible(true);
+                    return field;
+                })
+                .forEach(field -> {
+                    Class cls = field.getType();
+                    Object dependency = objects.get(cls);
+
+                    try {
+                        field.set(o, dependency);
+                    } catch (IllegalAccessException e) {
+
+                    }
+                });
     }
 
     public static <T> T getObj(Class<T> cls) {
