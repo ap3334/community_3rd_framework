@@ -3,6 +3,8 @@ package com.ll.exam;
 import com.ll.exam.annotation.Controller;
 import com.ll.exam.article.controller.ArticleController;
 import com.ll.exam.home.controller.HomeController;
+import lombok.Generated;
+import lombok.NoArgsConstructor;
 import org.reflections.Reflections;
 
 import java.io.UnsupportedEncodingException;
@@ -16,8 +18,21 @@ public class Container {
     private static final HomeController homeController;
 
     static {
-        articleController = new ArticleController();
-        homeController = new HomeController();
+        try {
+            articleController = (ArticleController) ArticleController.class.newInstance();
+        } catch (InstantiationException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+
+        try {
+            homeController = (HomeController) HomeController.class.newInstance();
+        } catch (InstantiationException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static ArticleController getArticleController() {
@@ -41,5 +56,9 @@ public class Container {
         }
 
         return controllerNames;
+    }
+
+    public static HomeController getArticleHomeController() {
+        return homeController;
     }
 }

@@ -1,6 +1,7 @@
 package com.ll.exam;
 
 import com.ll.exam.article.controller.ArticleController;
+import com.ll.exam.home.controller.HomeController;
 import org.junit.jupiter.api.Test;
 
 import java.io.UnsupportedEncodingException;
@@ -33,6 +34,23 @@ public class AppTest {
         ArticleController articleController2 = Container.getArticleController();
 
         assertThat(articleController1).isEqualTo(articleController2);
+    }
+
+    @Test
+    public void ioc_homeController() {
+
+        HomeController homeController = Container.getArticleHomeController();
+
+        assertThat(homeController).isNotNull();
+    }
+
+    @Test
+    public void ioc_homeController__싱글톤() {
+
+        HomeController homeController1 = Container.getArticleHomeController();
+        HomeController homeController2 = Container.getArticleHomeController();
+
+        assertThat(homeController1).isEqualTo(homeController2);
     }
 
     @Test
