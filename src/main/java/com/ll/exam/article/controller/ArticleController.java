@@ -17,7 +17,4 @@ public class ArticleController {
 
     }
 
-    public ArticleService getArticleServiceForTest() {
-        return articleService;
-    }
 }
