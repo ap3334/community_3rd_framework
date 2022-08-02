@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="435787bf-74db-499d-ae06-296f2ba65ced" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ll/exam/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ll/exam/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,7 +60,7 @@
       <recent name="com.ll.exam" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.AppTest.ioc_dd">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="community_3rd" />
       <extension name="coverage">
@@ -107,6 +108,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.ioc_dd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="community_3rd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.exam" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.exam.AppTest" />
+      <option name="METHOD_NAME" value="ioc_dd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/" />
@@ -133,10 +150,12 @@
       <item itemvalue="JUnit.AppTest" />
       <item itemvalue="JUnit.AppTest.ioc__articleController__2" />
       <item itemvalue="JUnit.AppTest.ioc_articleController" />
+      <item itemvalue="JUnit.AppTest.ioc_dd" />
       <item itemvalue="Smart Tomcat.tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.ioc_dd" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.ioc__articleController__2" />
         <item itemvalue="JUnit.AppTest.ioc_articleController" />

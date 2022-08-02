@@ -9,6 +9,13 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.10.2</version>
+        </dependency>
+
         <!-- JUNIT 5, 엔진 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>

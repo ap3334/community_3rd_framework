@@ -3,6 +3,9 @@ package com.ll.exam;
 import com.ll.exam.article.controller.ArticleController;
 import org.junit.jupiter.api.Test;
 
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class AppTest {
@@ -30,6 +33,14 @@ public class AppTest {
         ArticleController articleController2 = Container.getArticleController();
 
         assertThat(articleController1).isEqualTo(articleController2);
+    }
+
+    @Test
+    public void ioc_dd() {
+        List<String> controllerNames = Container.getControllerNames();
+
+        controllerNames.contains("home");
+        controllerNames.contains("article");
     }
 
 }
