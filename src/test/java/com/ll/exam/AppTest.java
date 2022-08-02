@@ -36,7 +36,7 @@ public class AppTest {
     }
 
     @Test
-    public void ioc_dd() {
+    public void ioc__Controller들을_스캔하여_수집() {
         List<String> controllerNames = Container.getControllerNames();
 
         controllerNames.contains("home");

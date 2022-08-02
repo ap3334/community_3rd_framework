@@ -32,9 +32,12 @@ public class Container {
         Set<Class<?>> controllerSet = reflector.getTypesAnnotatedWith(Controller.class);
 
         for (Class<?> controller : controllerSet) {
-            String key = controller.getSimpleName();
-            String[] temp = key.split("Controller");
-            controllerNames.add(temp[0].toLowerCase());
+            String name = controller.getSimpleName();
+            name = name.replace("Controller", "");
+
+            name = Ut.Str.deCapitalize(name);
+
+            controllerNames.add(name);
         }
 
         return controllerNames;
