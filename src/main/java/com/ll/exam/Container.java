@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import org.reflections.Reflections;
 
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -19,18 +20,26 @@ public class Container {
 
     static {
         try {
-            articleController = (ArticleController) ArticleController.class.newInstance();
+            articleController = (ArticleController) ArticleController.class.getDeclaredConstructor().newInstance();
         } catch (InstantiationException e) {
             throw new RuntimeException(e);
         } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        } catch (InvocationTargetException e) {
+            throw new RuntimeException(e);
+        } catch (NoSuchMethodException e) {
             throw new RuntimeException(e);
         }
 
         try {
-            homeController = (HomeController) HomeController.class.newInstance();
+            homeController = (HomeController) HomeController.class.getDeclaredConstructor().newInstance();
         } catch (InstantiationException e) {
             throw new RuntimeException(e);
         } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        } catch (InvocationTargetException e) {
+            throw new RuntimeException(e);
+        } catch (NoSuchMethodException e) {
             throw new RuntimeException(e);
         }
     }
